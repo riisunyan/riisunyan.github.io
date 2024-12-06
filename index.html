@@ -38,18 +38,11 @@
         }
     }
 
-    .head_bar_text {
-        text-align: center;
-        position: relative;
+    .home_button {
+        font-family: serif;
+        font-size: 50px;
         bottom: 30px;
         color: #31ffee;
-        @media (max-width: 1200px) {
-            font-size: 100px;
-            bottom: 75px
-        }
-    }
-
-    .home_button {
         position: fixed;
         margin-left: 50%;
         top: 0;
@@ -57,16 +50,13 @@
         width: 200px;
         height: 60px;
         background-color: transparent;
-        background-repeat: no-repeat;
         border: none;
         cursor: pointer;
-        overflow: hidden;
-        outline: none;
         @media (max-width: 1200px) {
             height: 100px;
             width: 400px;
             left: -200px;
-
+            font-size: 95px;
         }
     }
 
@@ -80,11 +70,8 @@
         width: 100px;
         background-color: #014646;
         border-radius: 10px;
-        background-repeat: no-repeat;
         border: none;
         cursor: pointer;
-        overflow: hidden;
-        outline: none;
         color: #31ffee;
         @media (max-width: 1200px) {
             width: 100px;
@@ -94,43 +81,55 @@
         }
     }
 
-    .hide_button {
+    .top_button_menu {
         font-size: 25px;
         font-family: "serif";
-        position: fixed;
-        margin-left: 0;
-        height: 54px;
-        top: 3px;
-        width: 100px;
+        position: relative;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        top: 5px;
+        height: 75px;
+        width: 140px;
         background-color: #014646;
-        border-radius: 10px;
-        background-repeat: no-repeat;
+        border-radius: 5px;
         border: none;
         cursor: pointer;
-        overflow: hidden;
-        outline: none;
         color: #31ffee;
+    }
+
+    .side_menu {
+        left: 5px;
+        top: 65px;
+        position: fixed;
+        background-color: #002424;
+        height: 405px; width: 150px;
+        border-radius: 10px;
         @media (max-width: 1200px) {
-            display: none;
+            top: 105px
         }
     }
 </style>
 
 <div class="head_bar">
-    <h1 class="head_bar_text">Ichika.ie</h1>
+    <h1 class="head_bar_text"></h1>
     <a href="/">
-        <button class="home_button">
+        <button class="home_button"><b>Ichika.ie</b>
         </button>
     </a>
     <a href="">
         <button class="top_button" style="left: 5px">Menu</button>
     </a>
-    <a href="/figures">
-        <button class="hide_button" style="left: 110px">Figures</button>
-    </a>
     <a href="">
         <button class="top_button" style="right: 5px">Other</button>
     </a>
+</div>
+
+<div class="side_menu">
+    <a><button class="top_button_menu">Figures</button></a>
+    <a><button class="top_button_menu">Python</button></a>
+    <a><button class="top_button_menu">Chemistry</button></a>
+    <a><button class="top_button_menu">Physics</button></a>
+    <a><button class="top_button_menu">Maths</button></a>
 </div>
 
 <body>
