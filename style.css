@@ -22,16 +22,6 @@ html header {
     left: 0;
 }
 
-@media (max-width: 1000px) {
-    html header {
-        transform: scale(2);
-        transform-origin: 0 0;
-    }
-    body > img {
-        margin-top: 75px;
-    }
-}
-
 header > div {
     display: inline;
     width: 50px;
@@ -75,6 +65,11 @@ body {
 @media (max-width: 1400px) {
     body {
         width: 100%;
+        margin-top: 140px
+    }
+    html header {
+        transform: scale(2);
+        transform-origin: 0 0;
     }
 }
 
