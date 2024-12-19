@@ -51,10 +51,42 @@
 </div>
 <h1>Welcome to ichika.ie!</h1>
 
-<p>
-    hello world
-</p>
-<p>
-    more text
-</p>
+<h2>Test Code:</h2>
+<pre>
+import numpy as np
+import time
+
+
+def matrix_add(a, b):
+    if len(a) != len(b) or len(a[0]) != len(b[0]):
+        print("Matrices must be same dimensions!")
+        return None
+    new_matrix = [[0 for _ in range(len(a[0]))] for _ in range(len(a))]
+    for row in range(len(a)):
+        for column in range(len(a[row])):
+            new_matrix[row][column] = a[row][column] + b[row][column]
+    return new_matrix
+
+
+def matrix_subtract(a, b):
+    if len(a) != len(b) or len(a[0]) != len(b[0]):
+        print("Matrices must be same dimensions!")
+        return None
+    new_matrix = [[0 for _ in range(len(a[0]))] for _ in range(len(a))]
+    for row in range(len(a)):
+        for column in range(len(a[row])):
+            new_matrix[row][column] = a[row][column] - b[row][column]
+    return new_matrix
+
+
+def matrix_multiply(a, b):
+    if len(a[0]) != len(b):
+        print("Number of columns in the first matrix must equal the number of rows in the second matrix!")
+        return None
+    result = [[0 for _ in range(len(b[0]))] for _ in range(len(a))]
+    for i in range(len(a)):
+        for j in range(len(b[0])):
+            for k in range(len(b)):
+                result[i][j] += a[i][k] * b[k][j]
+    return result</pre>
 </body>

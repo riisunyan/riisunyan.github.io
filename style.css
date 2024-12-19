@@ -68,7 +68,7 @@ aside button {
     background-image: linear-gradient(
             to bottom,
             rgb(0 0 0 / 0%),
-            rgb(0 0 0 / 10%)
+            rgb(0 0 0 / 20%)
     );
     box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
     border: none;
@@ -137,12 +137,19 @@ header button {
     margin-left: 15px;
     font-size: 45px;
     font-family: serif;
+    font-style: italic;
+    font-weight: bold;
     line-height: 0;
     width: initial;
     color: #18b6b6;
     background-color: rgb(0, 46, 46);
     border-radius: 5px;
     box-shadow: 2px 5px 5px rgb(0 0 0 / 50%);
+    background-image: linear-gradient(
+            to bottom,
+            rgb(0 0 0 / 0%),
+            rgb(0 0 0 / 30%)
+    );
 }
 
 header svg {
@@ -184,11 +191,24 @@ body {
 
 body > h1 {
     background-color: #012929;
+    text-shadow: -1px 0 #000000, 0 1px #000000;
     border-radius: 10px;
     box-shadow: 5px 10px 10px rgb(0 0 0 / 30%);
+    background-image: linear-gradient(
+            to bottom,
+            rgb(0 0 0 / 0%),
+            rgb(0 0 0 / 30%)
+    );
     padding: 5px;
 }
 
 body > p {
     padding: 10px;
+}
+
+body > pre {
+    margin-left: 40px;
+    padding-left: 10px;
+    border-left: 5px solid #012929;
+    border-radius: 5px;
 }
