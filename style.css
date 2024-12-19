@@ -3,6 +3,11 @@ html {
     font-size: 150%;
     color: white;
     text-shadow: -1px 0 #000000, 0 1px #000000;
+    background-image: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 200px,
+    rgb(200, 19, 19) 200px,
+    )
 }
 
 html header {
@@ -45,7 +50,11 @@ aside {
     width: 200px;
     height: 70%;
     box-shadow: 0 5px 5px rgb(0 0 0 / 30%);
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #18a0a0 #002b2b;
+    direction: rtl;
 }
 
 aside button {
@@ -53,7 +62,7 @@ aside button {
     font-family: serif;
     margin: 10px;
     width: 180px;
-    height: 10%;
+    height: 90px;
     border-radius: 7px;
     background-color: #002E2EFF;
     background-image: linear-gradient(
@@ -70,6 +79,7 @@ aside button {
 @media (max-width: 1400px) {
     aside button {
         width: 280px;
+        height: 120px;
         font-size: 1.8rem;
     }
     aside {
@@ -89,6 +99,7 @@ header button {
     margin-left: 15px;
     font-size: 45px;
     font-family: serif;
+    line-height: 0;
     width: initial;
     color: #18b6b6;
     background-color: rgb(0, 46, 46);
