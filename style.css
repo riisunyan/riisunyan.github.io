@@ -7,7 +7,9 @@ html {
     to right,
     rgb(0, 0, 0) 200px,
     rgb(200, 19, 19) 200px,
-    )
+    );
+    scrollbar-width: thin;
+    overflow-x: hidden;
 }
 
 html header {
@@ -211,4 +213,6 @@ body > pre {
     padding-left: 10px;
     border-left: 5px solid #012929;
     border-radius: 5px;
+    overflow-x: auto;
+    scrollbar-width: thin;
 }
