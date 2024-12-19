@@ -43,18 +43,18 @@ aside {
     background-color: #002424FF;
     background-image: linear-gradient(
             to bottom,
+            rgb(0 0 0 / 20%),
             rgb(0 0 0 / 0%),
-            rgb(0 0 0 / 30%)
+            rgb(0 0 0 / 20%)
     );
     border-radius: 15px;
     width: 200px;
-    height: 70%;
+    max-height: 70%;
     box-shadow: 0 5px 5px rgb(0 0 0 / 30%);
     overflow-x: hidden;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: #18a0a0 #002b2b;
-    direction: rtl;
 }
 
 aside button {
@@ -76,7 +76,29 @@ aside button {
     cursor: pointer;
 }
 
+aside svg {
+    box-shadow: 0 5px 5px rgb(0 0 0 / 10%);
+}
+
+aside .links {
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-bottom: -15px;
+    border-radius: 10px;
+    width: 180px;
+    background-color: #002E2EFF;
+    background-image: linear-gradient(
+            to bottom,
+            rgb(0 0 0 / 0%),
+            rgb(0 0 0 / 10%)
+    );
+    box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
+}
+
 @media (max-width: 1400px) {
+    aside .links {
+        width: 280px;
+    }
     aside button {
         width: 280px;
         height: 120px;
@@ -85,6 +107,22 @@ aside button {
     aside {
     width: 300px;
 }}
+
+.links h3 {
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-bottom: -15px;
+}
+
+aside a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li {
+    padding-bottom: 5px;
+    list-style: circle;
+}
 
 header button {
     border: none;
