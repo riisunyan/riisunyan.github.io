@@ -9,10 +9,11 @@ html {
     rgb(200, 19, 19) 200px,
     );
     scrollbar-width: thin;
+    scrollbar-color: #18a0a0 #002b2b;
     overflow-x: hidden;
 }
 
-html header {
+html nav {
     position: fixed;
     display: flex;
     width: 100%;
@@ -29,7 +30,7 @@ html header {
     left: 0;
 }
 
-header .header_icon {
+nav .nav_icon {
     display: inline;
     width: 50px;
     height: 50px;
@@ -101,7 +102,7 @@ aside .page_links {
     margin-bottom: 0;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
     aside {
         display: flex;
         width: 600px;
@@ -162,7 +163,7 @@ ul {
     margin-left: 15px;
 }
 
-header button {
+nav button {
     border: none;
     background-color: transparent;
     color: white;
@@ -190,7 +191,7 @@ header button {
     );
 }
 
-header svg {
+nav svg {
     box-shadow: 2px 5px 5px rgb(0 0 0 / 50%);
 }
 
@@ -206,28 +207,26 @@ body {
         width: 100%;
         margin-top: 140px
     }
-    html header {
+    html nav {
         transform: scale(2);
         transform-origin: 0 0;
     }
 }
 
-.head_image > img {
+header > img {
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
     box-sizing: border-box;
-    width: 1400px;
+    width: 100%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 5px 10px 10px rgb(0 0 0 / 30%);
     border: 3px solid #002424FF;
     padding: 0;
 }
-@media (max-width: 1400px) {
-    .head_image > img {
-        width: 100%;
-    }
-}
 
-body > h1 {
+header > h1 {
     background-color: #012929;
     text-shadow: -1px 0 #000000, 0 1px #000000;
     border-radius: 10px;
@@ -237,18 +236,20 @@ body > h1 {
             rgb(0 0 0 / 0%),
             rgb(0 0 0 / 30%)
     );
-    padding: 5px;
+    padding: 5px 10px 5px 10px;
 }
 
-body > p {
-    padding: 10px;
+body > h1, h2, h3, h4, h5, h6, p {
+    padding: 5px 10px 5px 10px;
 }
 
 body > pre {
     margin-left: 40px;
-    padding-left: 10px;
-    border-left: 5px solid #012929;
+    padding: 10px;
+    border-left: 8px solid #012929;
     border-radius: 5px;
     overflow-x: auto;
     scrollbar-width: thin;
+    scrollbar-color: #18a0a0 #002b2b;
+    background-color: #013434;
 }

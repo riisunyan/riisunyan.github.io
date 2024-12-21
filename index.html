@@ -7,7 +7,7 @@
     <link href="/images/favicon.png" rel="icon" type="image/x-icon">
 </head>
 
-<header>
+<nav>
     <div class="header-icon" style="margin-left: 15px">
         <a href="https://ichika.ie/">
             <button>
@@ -21,12 +21,12 @@
             </button>
         </a>
     </div>
-    <div class="header_icon">
+    <div class="nav_icon">
         <a href="https://ichika.ie/">
             <button class="home_button">Ichika.ie</button>
         </a>
     </div>
-</header>
+</nav>
 
 <aside>
     <div class="sidebar_links">
@@ -48,12 +48,12 @@
     </div>
 </aside>
 
-<body>
-<div class="head_image">
+<header>
     <img alt="header image showing a figure" src="/images/IMG_2639-1800.jpg">
-</div>
-<h1>Welcome to ichika.ie!</h1>
+    <h1>Welcome to ichika.ie!</h1>
+</header>
 
+<body>
 <h2>Test Code:</h2>
 <pre>
 import numpy as np
@@ -69,27 +69,5 @@ def matrix_add(a, b):
         for column in range(len(a[row])):
             new_matrix[row][column] = a[row][column] + b[row][column]
     return new_matrix
-
-
-def matrix_subtract(a, b):
-    if len(a) != len(b) or len(a[0]) != len(b[0]):
-        print("Matrices must be same dimensions!")
-        return None
-    new_matrix = [[0 for _ in range(len(a[0]))] for _ in range(len(a))]
-    for row in range(len(a)):
-        for column in range(len(a[row])):
-            new_matrix[row][column] = a[row][column] - b[row][column]
-    return new_matrix
-
-
-def matrix_multiply(a, b):
-    if len(a[0]) != len(b):
-        print("Number of columns in the first matrix must equal the number of rows in the second matrix!")
-        return None
-    result = [[0 for _ in range(len(b[0]))] for _ in range(len(a))]
-    for i in range(len(a)):
-        for j in range(len(b[0])):
-            for k in range(len(b)):
-                result[i][j] += a[i][k] * b[k][j]
-    return result</pre>
+</pre>
 </body>
