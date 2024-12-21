@@ -102,7 +102,7 @@ aside .page_links {
     margin-bottom: 0;
 }
 
-@media (orientation: portrait) and (hover: none) and (pointer: coarse) {
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: 1200px) {
     aside {
         display: flex;
         width: 600px;
@@ -198,13 +198,18 @@ nav svg {
 body {
     height: 100%;
     width: 1400px;
-    margin: 65px auto auto auto;
+    margin: 70px auto auto auto;
     background-color: #014646;
 }
 
 @media (max-width: 1400px), (orientation: portrait) and (hover: none) and (pointer: coarse) {
     body {
         width: 100%;
+    }
+}
+
+@media (orientation: portrait) and (hover: none) and (pointer: coarse) {
+    body {
         margin-top: 140px
     }
     html nav {
