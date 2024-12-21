@@ -102,7 +102,7 @@ aside .page_links {
     margin-bottom: 0;
 }
 
-@media (max-width: 1200px) {
+@media (orientation: portrait) and (hover: none) and (pointer: coarse) {
     aside {
         display: flex;
         width: 600px;
@@ -202,7 +202,7 @@ body {
     background-color: #014646;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px), (orientation: portrait) and (hover: none) and (pointer: coarse) {
     body {
         width: 100%;
         margin-top: 140px
