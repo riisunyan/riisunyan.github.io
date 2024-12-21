@@ -102,7 +102,7 @@ aside .page_links {
     margin-bottom: 0;
 }
 
-@media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: 1200px) {
+@media (max-width: 1200px) {
     aside {
         display: flex;
         width: 600px;
