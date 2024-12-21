@@ -62,7 +62,7 @@ aside {
 aside button {
     font-size: 120%;
     font-family: serif;
-    margin: 10px 10px 10px;
+    margin: 10px 10px 0;
     width: 180px;
     height: 90px;
     border-radius: 7px;
@@ -83,6 +83,8 @@ aside svg {
 }
 
 aside .page_links {
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin: 10px;
     border-radius: 10px;
     width: 180px;
@@ -95,23 +97,43 @@ aside .page_links {
     box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
 }
 
+.sidebar_links > a:nth-child(-1) > button:nth-child(1) {
+    margin-bottom: 0;
+}
+
 @media (max-width: 1400px) {
     aside {
         display: flex;
         width: 600px;
         font-size: 150%;
-    }
-    aside div {
-        width: 300px;
+        overflow-y: hidden;
     }
     aside button {
         width: 280px;
         height: 120px;
+        margin-left: 0;
     }
     aside .page_links {
         width: 320px;
-        height: 100%;
-        margin-left: 0;
+        margin-left: 10px;
+        overflow-y: auto;
+    }
+    aside .page_links {
+        overflow-y: auto;
+        scrollbar-width: thin;
+    }
+    aside .sidebar_links {
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-width: thin;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        border-radius: 10px;
+        width: 320px;
+    }
+    .sidebar_links > a:nth-child(1) > button:nth-child(1) {
+        margin-top: 0;
     }
     aside svg {
         display: none;
@@ -137,6 +159,7 @@ ul li {
 ul {
     margin-top: 5px;
     margin-bottom: 10px;
+    margin-left: 15px;
 }
 
 header button {
