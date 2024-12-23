@@ -1,9 +1,3 @@
-if (window.innerWidth > 1000) {
-    let navIsVisible = true;
-} else {
-    let navIsVisible = false;
-}
-
 document.getElementById('nav_button').addEventListener('click', function () {
     const nav = document.querySelector('nav');
     const body = document.querySelector('body');
@@ -11,7 +5,7 @@ document.getElementById('nav_button').addEventListener('click', function () {
     if (nav.style.display === 'none' || window.getComputedStyle(nav).display === 'none') {
         nav.style.display = 'block';
         navIsVisible = true;
-        if (screenWidth > 1000) {
+        if (screenWidth > 1200) {
             body.style.paddingLeft = '320px';
         }
     } else {
@@ -25,7 +19,7 @@ window.addEventListener('resize', function () {
     const body = document.querySelector('body');
     const nav = document.querySelector('nav');
     const screenWidth = window.innerWidth;
-    if (screenWidth > 1000) {
+    if (screenWidth > 1200) {
         if (navIsVisible) {
             nav.style.display = 'block';
             body.style.paddingLeft = '320px';

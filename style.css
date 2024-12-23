@@ -123,7 +123,7 @@ body img {
     border-bottom-right-radius: 10px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     body {
         padding-left: 0;
     }
@@ -133,7 +133,7 @@ body img {
     }
 }
 
-@media (max-width: 1000px) and (orientation: portrait) and (hover: none) and (pointer: coarse) {
+@media (max-width: 1200px) and (orientation: portrait) and (hover: none) and (pointer: coarse) {
     body {
         margin-top: 140px;
     }
