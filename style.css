@@ -145,11 +145,18 @@ body img {
     nav {
         margin-top: 140px;
         height: calc(100% - 140px);
-        width: 450px;
+        width: 600px;
     }
 
     nav .nav_content {
-        font-size: 200%;
+        font-size: 250%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 100px
+    }
+
+    nav .menu_container {
+        padding-left: 40px;
     }
 }
 
