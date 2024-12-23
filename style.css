@@ -88,7 +88,7 @@ nav .nav_content {
     border-radius: 15px;
 }
 
-@media (hover: none) and (pointer: coarse) {
+@media (hover: none) or (pointer: coarse) {
     nav .nav_content {
         background-color: #001414;
     }
@@ -133,7 +133,7 @@ body img {
     }
 }
 
-@media (orientation: portrait) and (pointer: coarse) {
+@media (orientation: portrait) and (pointer: coarse), (orientation: portrait) and (hover: none) {
     body {
         margin-top: 140px;
     }
