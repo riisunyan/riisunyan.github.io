@@ -88,14 +88,14 @@ nav .nav_content {
     border-radius: 15px;
 }
 
-@media (hover: none) or (pointer: coarse) {
+nav .nav_content:hover {
+    background-color: #002424;
+}
+
+@media (pointer: coarse), (hover: none) {
     nav .nav_content {
         background-color: #001414;
     }
-}
-
-nav .nav_content:hover {
-    background-color: #002424;
 }
 
 nav .menu_container {
@@ -155,7 +155,8 @@ body img {
         font-size: 250%;
         padding-top: 30px;
         padding-bottom: 30px;
-        padding-left: 100px
+        padding-left: 100px;
+        background-color: #001414;
     }
 
     nav .menu_container {
