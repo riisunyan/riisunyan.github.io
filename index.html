@@ -4,70 +4,62 @@
     <meta charset="UTF-8">
     <title>Ichika</title>
     <link href="style.css" rel="stylesheet"/>
-    <link href="/images/favicon.png" rel="icon" type="image/x-icon">
+    <link href="/images/favicon.ico" rel="icon" type="image/x-icon">
 </head>
 
-<nav>
-    <div class="header-icon" style="margin-left: 15px">
-        <a href="https://ichika.ie/">
-            <button>
-                <svg height="31" width="40">
-
-                    <rect fill="#18b6b6" height="5" width="100%" x="0" y="2"/>
-                    <rect fill="#18b6b6" height="5" width="100%" x="0" y="14"/>
-                    <rect fill="#18b6b6" height="5" width="100%" x="0" y="26"/>
-
-                </svg>
-            </button>
-        </a>
+<body>
+<header>
+    <div>
+        <button id="nav_button">
+            <svg height="60" width="70px">
+                <rect fill="#00E1E1" height="7px" rx="3" ry="3" width="45px" x="12.5" y="15"></rect>
+                <rect fill="#00E1E1" height="7px" rx="3" ry="3" width="45px" x="12.5" y="30"></rect>
+                <rect fill="#00E1E1" height="7px" rx="3" ry="3" width="45px" x="12.5" y="45"></rect>
+            </svg>
+        </button>
+        <div class="home_bar_items">
+            <a href=""><img alt="Ichika logo/home button" class="header_home_button" src="/images/favicon.ico"></a>
+            <a href=""><span>Ichika</span></a>
+        </div>
     </div>
-    <div class="nav_icon">
-        <a href="https://ichika.ie/">
-            <button class="home_button">Ichika.ie</button>
-        </a>
+</header>
+
+<nav>
+    <div class="nav_content menu_container">
+        <span>Navigation</span>
+    </div>
+    <a href="">
+        <div class="nav_content"><span>Figures</span></div>
+    </a>
+    <a href="">
+        <div class="nav_content"><span>Python</span></div>
+    </a>
+    <a href="">
+        <div class="nav_content"><span>Chemistry</span></div>
+    </a>
+    <a href="">
+        <div class="nav_content"><span>Physics</span></div>
+    </a>
+    <a href="">
+        <div class="nav_content"><span>Maths</span></div>
+    </a>
+    <svg height="5" width="100%">
+        <rect fill="#002424" height="3" rx="3" ry="3" width="100%"></rect>
+    </svg>
+    <div class="nav_content menu_container" style="display: none">
+        <span>Page Links</span>
     </div>
 </nav>
 
-<aside>
-    <div class="sidebar_links">
-    <a href="/figures"><button>Figures</button></a>
-    <a href="/python"><button>Python</button></a>
-    <a href="/chemistry"><button>Chemistry</button></a>
-    <a href="/physics"><button>Physics</button></a>
-    <a href="/maths"><button>Maths</button></a>
-    </div>
-    <svg height="5" width="100%">
-        <rect x="0" y="0" width="100%" height="5" fill="#002E2EFF"/>
-    </svg>
-    <div class="page_links"> <!--use h3 and ul tags.-->
-        <a href="https://ichika.ie"><h3>Welcome!</h3></a>
-        <ul>
-            <li><a href="https://ichika.ie/about">About</a></li>
-            <li><a href="https://ichika.ie/about">About</a></li>
-        </ul>
-    </div>
-</aside>
+<img alt="Ichika Header Image"
+     src="/images/header/header_img.jpg"
+     srcset="/images/header/xsmall.jpg 700w, /images/header/small.jpg 1050w, /images/header/medium.jpg 1400w, /images/header/large.jpg 2800w, /images/header/header_img.jpg 4800w"/>
+<a href=""></a>
 
-<header>
-    <img alt="header image showing a figure" src="/images/IMG_2639-1800.jpg">
-    <h1>Welcome to ichika.ie!</h1>
-</header>
+<article>
+    <h1>Welcome to Ichika.ie</h1>
+</article>
 
-<body>
-<h2>Test Code:</h2>
-<pre>
-import numpy as np
-import time
-
-
-def matrix_add(a, b):
-    if len(a) != len(b) or len(a[0]) != len(b[0]):
-        print("Matrices must be same dimensions!")
-        return None
-    new_matrix = [[0 for _ in range(len(a[0]))] for _ in range(len(a))]
-    for row in range(len(a)):
-        for column in range(len(a[row])):
-            new_matrix[row][column] = a[row][column] + b[row][column]
-    return new_matrix
-</pre>
+<script src="script.js"></script>
 </body>
+</html>
