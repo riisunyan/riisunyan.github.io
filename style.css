@@ -85,7 +85,7 @@ nav .nav_content {
     background-color: #000D0D;
     align-items: center;
     margin-bottom: 5px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 @media (hover: none) and (pointer: coarse) {
@@ -150,6 +150,8 @@ body img {
     }
 
     nav .nav_content {
+        margin-bottom: 10px;
+        border-radius: 20px;
         font-size: 250%;
         padding-top: 30px;
         padding-bottom: 30px;

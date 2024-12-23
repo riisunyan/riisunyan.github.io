@@ -1,4 +1,8 @@
-let navIsVisible = true;
+if (window.innerWidth > 1000) {
+    let navIsVisible = true;
+} else {
+    let navIsVisible = false;
+}
 
 document.getElementById('nav_button').addEventListener('click', function () {
     const nav = document.querySelector('nav');
@@ -21,7 +25,7 @@ window.addEventListener('resize', function () {
     const body = document.querySelector('body');
     const nav = document.querySelector('nav');
     const screenWidth = window.innerWidth;
-    if (screenWidth > 1200) {
+    if (screenWidth > 1000) {
         if (navIsVisible) {
             nav.style.display = 'block';
             body.style.paddingLeft = '320px';
