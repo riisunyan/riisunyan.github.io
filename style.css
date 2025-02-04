@@ -137,6 +137,10 @@ body > img {
         margin-top: 140px;
     }
 
+    article {
+        font-size: 150%;
+    }
+
     header {
         transform: scale(2);
         transform-origin: top left;
