@@ -207,6 +207,12 @@ article img {
     margin-left: auto;
 }
 
+@media (max-width: 1921px) and (orientation: landscape) {
+    article img {
+        max-height: 50vh;
+    }
+}
+
 article div:nth-child(odd) img {
     margin-left: revert;
     margin-right: auto;
