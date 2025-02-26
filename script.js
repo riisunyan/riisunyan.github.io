@@ -43,7 +43,7 @@ sidebar.innerHTML = `
     <div class="nav_content menu_container" style="display: none">
         <span>Page Links</span>
     </div>
-    <p>Only the Homepage, figures page and chemistry page exist.</p>
+    <p>(Most pages give an Error 404)</p>
 `;
 document.body.appendChild(sidebar);
 
