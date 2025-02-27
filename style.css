@@ -218,7 +218,7 @@ article div:nth-child(odd) img {
     margin-right: auto;
 }
 
-article div {
+article div, details {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -229,13 +229,17 @@ article div {
     margin-bottom: 30px;
 }
 
+details {
+    padding: 10px;
+}
+
 article div:nth-child(odd) {
     flex-direction: row-reverse;
 }
 
 article pre {
     padding: 5px;
-    border-left: 5px solid #579999;
+    border-left: 3px solid #38dada;
     background-color: #001414;
     border-radius: 5px;
     margin-left: 20px;
