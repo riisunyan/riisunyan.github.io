@@ -9,7 +9,7 @@ header.innerHTML = `
       </svg>
     </button>
     <div class="home_bar_items">
-      <a href="/"><img alt="Ichika logo/home button" class="header_home_button" src="/images/favicon.ico"></a>
+      <a href="/"><img alt="Ichika logo/home button" class="header_home_button" src="/images/logo.webp"></a>
       <a href="/"><span>Ichika</span></a>
     </div>
   </div>

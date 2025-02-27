@@ -177,7 +177,7 @@ article {
 }
 
 article > h1, article > h2, article > h3, article > h4, article > h5, article > h6 {
-    background-color: #002424;
+    background-color: #001e1e;
     border-radius: 10px;
     padding: 10px;
 }
@@ -194,8 +194,8 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
 
 article p {
     display: flex;
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
 }
 
 article img {
@@ -226,7 +226,8 @@ article div, details {
     border-radius: 20px;
     border: 5px solid #002424;
     background-color: #000D0D;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 details {
@@ -244,4 +245,29 @@ article pre {
     border-radius: 5px;
     margin-left: 20px;
     overflow-x: auto;
+    font-size: 75%;
+}
+
+article footer {
+    font-size: 70%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+footer a {
+    padding: 10px;
+}
+
+article a {
+    color: #0066cc;
+}
+article a:hover {
+    color: #3399ff;
+}
+article a:visited {
+    color: #551A8B;
+}
+
+ul {
+    margin-top: -5px;
 }

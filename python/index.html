@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ichika - Python</title>
+  <link href="/style.css" rel="stylesheet"/>
+  <link href="/images/favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+
+<img src="/images/website.PNG" alt="code image">
+
+<article>
+  <h1>Downloading and Archiving YouTube Videos</h1>
+
+  <details>
+    <summary>Main Code (collapsible)</summary>
+    <pre>
+import yt_dlp
+import os
+import time
+
+
+def uploader_and_playlist_id(url):
+    ydl_opts = {'quiet': True, 'extract_flat': True, 'force_generic_extractor': True}
+
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        info = ydl.extract_info(url, download=False)
+        return {
+            'channel_id': info.get('channel_id'),
+            'playlist_id': info.get('playlist_id') or info.get('id')
+        }
+
+
+def create_directory_if_not_exists(directory):
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+
+class VidDL:
+    def __init__(self, source_list="", run_directory=r'F:\ytdlp',
+                 file_name="ﾂ･%(upload_date>%Y-%m-%d)s･ﾂ %(title)s[%(id)s]-%(uploader)s.%(ext)s", download_json=False):
+        self.source_list = source_list
+        self.run_directory = run_directory
+        self.download_json = download_json
+        self.file_name = file_name
+
+    def ydl(self):
+        os.chdir(self.run_directory)
+        for url in self.source_list:
+            archive_file, outtmpl = VidDL.create_archive(self, url)
+
+            cmd = (
+                rf'yt-dlp '
+                rf'-f bestvideo+bestaudio/best --merge-output-format mkv '
+                rf'--embed-thumbnail --convert-thumbnail png '
+                rf'--embed-sub --sub-lang en,ja '
+                rf'--add-metadata --embed-chapters '
+                rf'--download-archive {archive_file} '
+                rf'-o "{outtmpl}" "{url}" '
+            )
+            os.system(cmd)
+
+    def create_archive(self, url):
+        url_info = uploader_and_playlist_id(url)
+        ch_id, pl_id = url_info['channel_id'], url_info['playlist_id']
+        archive_path = rf"{self.run_directory}\##UploadID\{ch_id}"
+        archive_file = rf"{archive_path}\archive.txt"
+        pl_archive_path = rf"{archive_path}\{pl_id}"
+        pl_archive_file = rf"{pl_archive_path}\archive.txt"
+
+        if 'www.youtube.com/playlist' in url:
+            archive_file = pl_archive_file
+            create_directory_if_not_exists(pl_archive_path)
+            outtmpl = rf'{self.run_directory}\%(playlist_uploader)s  --Youtube\%(playlist_title)s\{self.file_name}'
+        elif 'www.youtube.com' in url:
+            create_directory_if_not_exists(archive_path)
+            outtmpl = rf'{self.run_directory}\%(uploader)s  --Youtube\{self.file_name}'
+        elif 'www.nicovideo.jp' in url:
+            create_directory_if_not_exists(archive_path)
+            outtmpl = rf'{self.run_directory}\%(uploader)s  --Nicovideo\{self.file_name}'
+        else:
+            create_directory_if_not_exists(archive_path)
+            outtmpl = rf'{self.run_directory}\%(uploader)s  --%(extractor)s\{self.file_name}'
+        return archive_file, outtmpl
+
+    def full_download(self):
+        start_time = time.strftime('%d/%m/%Y -- %H:%M:%S')
+        VidDL.ydl(self)
+        end_time = time.strftime('%d/%m/%Y -- %H:%M:%S')
+        end_text = (f'\nStarted: {start_time}\n'
+                f'Ended: {end_time}')
+        print(end_text)
+    </pre>
+  </details>
+
+  <p>Running code (in seperate file):</p>
+    <pre>
+videos = ['url1', 'url2']
+VideoDownloadCode.VidDL(source_list=videos, run_directory=r'F:\ytdlp').full_download()
+</pre>
+  <p>(replace url1 and url2 with an actual URL)</p>
+
+  <div class="gap">
+    <p>After downloading ~700 videos, I've used up >50GB. I find it useful for saving all the videos from
+     specific uploaders without much hassle-- as long as ytdlp is kept up to date. I'd recommend using the channel ID
+    in the URLs and ensuring /videos is part of the URL. Channel IDs cannot change, which prevents failed downloads
+     should the user @ change.</p>
+    <img src="/images/50gb%20folders.PNG" alt="">
+  </div>
+
+  <p>
+    It mainly works using ytdlp, however I intend on making it possible to save subtitle files to a separate folder, and
+    json files (with datetime formats) to a separate folder.
+  </p>
+
+  <p>
+    The format for VidDL is as follows: (source_list, run_directory, file_name, download_json)
+  </p>
+  <ul>
+    <li>source_list is a list of URLs;</li>
+    <li>run_directory is the directory in which the files will be saved;</li>
+    <li>file_name is the name of the file, following the ytdlp formatting;</li>
+    <li>download_json is a boolean (True/False); a feature yet to be added.</li>
+  </ul>
+
+  <footer>Items mentioned:<br><a href="https://www.python.org/">Python</a>
+    <a href="https://www.jetbrains.com/pycharm/">Pycharm (Python IDE)</a>
+    <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a></footer>
+</article>
+
+</body>
+<script src="/script.js"></script>
+</html>
