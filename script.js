@@ -9,7 +9,7 @@ header.innerHTML = `
       </svg>
     </button>
     <div class="home_bar_items">
-      <a href="/"><img alt="Ichika logo/home button" class="header_home_button" src="/images/logo.webp"></a>
+      <!--<a href="/"><img alt="Ichika logo/home button" class="header_home_button" src="/images/logo.webp"></a>-->
       <a href="/"><span>Ichika</span></a>
     </div>
   </div>
@@ -43,7 +43,7 @@ sidebar.innerHTML = `
     <div class="nav_content menu_container" style="display: none">
         <span>Page Links</span>
     </div>
-    <p>(Most pages give an Error 404)</p>
+    <h5>Python page has been added!</h5>
 `;
 document.body.appendChild(sidebar);
 
