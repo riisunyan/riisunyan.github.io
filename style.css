@@ -266,7 +266,9 @@ ul {
         padding-left: 40px;
         background-color: #002424;
     }
+}
 
+@media (orientation: portrait) {
     article div {
         flex-direction: column;
     }
