@@ -43,7 +43,10 @@ sidebar.innerHTML = `
     <div class="nav_content menu_container" style="display: none">
         <span>Page Links</span>
     </div>
-    <h5>Python page has been added!</h5>
+    
+    <ul>12/03/25: 
+    <li>New Figure Images</li>
+    </ul>
 `;
 document.body.appendChild(sidebar);
 
