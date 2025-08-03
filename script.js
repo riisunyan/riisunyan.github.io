@@ -48,7 +48,7 @@ sidebar.innerHTML = `
     </div>
     
     <ul>3/08/25:
-    <li>Uma Musume Page</li>
+    <li>Uma Musume Page (JSON Testing)</li>
     </ul>
 `;
 document.body.appendChild(sidebar);
