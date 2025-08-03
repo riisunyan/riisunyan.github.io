@@ -37,6 +37,9 @@ sidebar.innerHTML = `
     <a href="/maths">
         <div class="nav_content"><span>Maths</span></div>
     </a>
+    <a href="/umamusume">
+        <div class="nav_content"><span>Uma Musume</span></div>
+    </a>
     <svg height="5" width="100%">
         <rect fill="#002424" height="3" rx="3" ry="3" width="100%"></rect>
     </svg>

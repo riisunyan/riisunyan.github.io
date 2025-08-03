@@ -218,6 +218,41 @@ ul {
     margin-top: 0;
 }
 
+input[type=text] {
+    width: 100%;
+    padding: 8px;
+    font-size: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #003e3e;
+    color: white;
+}
+
+form button, button#resetBtn {
+    width: 100%;
+    padding: 8px;
+    font-size: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-top: 20px;
+    border: none;
+    background-color: #00dada;
+    color: #000000;
+}
+
+textarea {
+    background-color: #003e3e;
+    border-radius: 10px;
+    color: white;
+    margin: auto;
+    width: 100%;
+    height: 30%;
+    resize: vertical;
+}
+
 @media (max-width: 1200px) {
     body {
         padding-left: 0;

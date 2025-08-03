@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Figures</title>
+  <link href="/style.css" rel="stylesheet"/>
+  <link href="/images/favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+<article>
+  <h1>Uma Musume Project</h1>
+
+  <form id="cardForm">
+    <label>Character/Card Name: <input type="text" id="name"></label><br>
+    <label>Friendship Bonus: <input type="text" id="friendship_bonus"></label><br>
+    <label>Mood Effect: <input type="text" id="mood_effect"></label><br>
+    <label>Training Effectiveness: <input type="text" id="training_effectiveness"></label><br>
+    <label>Specialty Priority: <input type="text" id="speciality_priority"></label><br>
+    <label>Stat Bonus: <input type="text" id="stat_bonus"></label><br>
+    <label>Card Type: <input type="text" id="card_type"></label><br>
+    <button type="submit">Add Card</button>
+  </form>
+
+  <textarea id="jsonOutput" rows="15" cols="60" readonly></textarea>
+
+  <button type="button" id="resetBtn">Clear Output</button>
+
+  <footer>*Not affiliated with Uma Musume or Cygames</footer>
+</article>
+</body>
+<script src="/script.js"></script>
+<script src="/umascript.js"></script>
+</html>
