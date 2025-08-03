@@ -47,8 +47,8 @@ sidebar.innerHTML = `
         <span>Page Links</span>
     </div>
     
-    <ul>12/03/25: 
-    <li>New Figure Images</li>
+    <ul>3/08/25:
+    <li>Uma Musume Page</li>
     </ul>
 `;
 document.body.appendChild(sidebar);
