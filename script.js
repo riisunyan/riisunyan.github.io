@@ -47,8 +47,7 @@ sidebar.innerHTML = `
         <span>Page Links</span>
     </div>
     
-    <ul>3/08/25:
-    <li>Uma Musume Page (JSON Testing)</li>
+    <ul>Last update: 8th of October, 2025
     </ul>
 `;
 document.body.appendChild(sidebar);
