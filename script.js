@@ -47,7 +47,7 @@ sidebar.innerHTML = `
         <span>Page Links</span>
     </div>
     
-    <ul>Last update: 8th of October, 2025
+    <ul>Last update: 13th of October, 2025
     </ul>
 `;
 document.body.appendChild(sidebar);
