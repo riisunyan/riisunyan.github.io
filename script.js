@@ -37,9 +37,6 @@ sidebar.innerHTML = `
     <a href="/maths">
         <div class="nav_content"><span>Maths</span></div>
     </a>
-    <a href="/umamusume">
-        <div class="nav_content"><span>Uma Musume</span></div>
-    </a>
     <svg height="5" width="100%">
         <rect fill="#002424" height="3" rx="3" ry="3" width="100%"></rect>
     </svg>
@@ -47,7 +44,7 @@ sidebar.innerHTML = `
         <span>Page Links</span>
     </div>
     
-    <ul>Last update: 13th of October, 2025
+    <ul>Last update: this year
     </ul>
 `;
 document.body.appendChild(sidebar);
