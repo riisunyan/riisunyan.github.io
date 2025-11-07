@@ -76,10 +76,9 @@ div.gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    border: 1px solid #004e4e;
+    /*border: 1px solid #004e4e;*/
     border-radius: 10px;
-    padding: 5px;
-    margin: 5px;
+    padding: 3px;
 }
 
 div.gallery div {
@@ -89,9 +88,8 @@ div.gallery div {
 }
 
 div.gallery p {
-    max-width: 90%;
-    margin-top: 0;
-    margin-bottom: 10px;
+    max-width: 95%;
+    margin: 0 auto 10px;
 }
 
 div.gallery div:last-child p {
@@ -123,18 +121,9 @@ a:visited {
 
 @media (orientation: portrait) and (pointer: coarse), (orientation: portrait) and (hover: none), (max-width: 768px) {
     html {
-        font-size: 70%;
+        font-size: 85%;
     }
     div.gallery div {
         max-width: 99%;
-    }
-    div.gallery p {
-        margin-bottom: 10px;
-    }
-    div.gallery div:last-child p {
-        margin-bottom: 0;
-    }
-    footer {
-        font-size: medium;
     }
 }
