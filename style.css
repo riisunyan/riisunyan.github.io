@@ -115,6 +115,7 @@ a:visited {
     color: #0000EE;
 }
 
+/*
 @media (orientation: portrait) and (pointer: coarse), (orientation: portrait) and (hover: none), (max-width: 768px) {
     html {
         font-size: 150%;
@@ -134,3 +135,4 @@ a:visited {
         font-size: medium;
     }
 }
+*/
