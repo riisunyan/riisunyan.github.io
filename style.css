@@ -30,9 +30,24 @@ nav {
     display: flex;
     overflow-x: scroll;
     scrollbar-width: None;
-    padding: 10px 5px 10px 5px;
+    padding: 5px 3px 5px 3px;
     border: 2px solid #003434;
     border-radius: 10px;
+    gap: 1px;
+}
+
+button {
+    margin: 0 3px 0 3px;
+    border: 0;
+    background-color: #003434;
+    border-radius: 7px;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+button:hover {
+    background-color: #004e4e;
 }
 
 h1, h2, h3 {
@@ -56,20 +71,6 @@ div {
 
 div p {
     text-align: center;
-}
-
-button {
-    margin: 0 5px 0 5px;
-    border: 0;
-    background-color: #003434;
-    border-radius: 7px;
-    padding: 15px;
-    font-size: 20px;
-    color: white;
-}
-
-button:hover {
-    background-color: #004e4e;
 }
 
 div.gallery {

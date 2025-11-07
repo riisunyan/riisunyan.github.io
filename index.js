@@ -17,3 +17,8 @@ favicon.href = "/contents/images/favicon.ico";
 favicon.rel = "icon";
 favicon.type = "image/x-icon";
 document.body.appendChild(favicon);
+
+const viewport = document.createElement("meta");
+viewport.name="viewport";
+viewport.content="width=device-width, initial-scale=1";
+document.body.appendChild(viewport);
