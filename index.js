@@ -1,7 +1,8 @@
 const nav = document.createElement("nav");
 nav.innerHTML = `
-<a href="/"><button>Home</button></a>
-<a href="/figures"><button>Figures</button></a>
+<button onclick="window.location.href='/'">Home</button>
+<button onclick="window.location.href='/figurines'">Figurines</button>
+<button onclick="window.location.href='/coding/python'">Python</button>
 `;
 document.body.prepend(nav);
 
@@ -10,3 +11,9 @@ footer.innerHTML = `
 <footer><a href="/links">Navigation</a></footer>
 `;
 document.body.appendChild(footer);
+
+const favicon = document.createElement("link");
+favicon.href = "/contents/images/favicon.ico";
+favicon.rel = "icon";
+favicon.type = "image/x-icon";
+document.body.appendChild(favicon);

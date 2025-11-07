@@ -1,25 +1,23 @@
 html {
     max-width: 1050px;
-    min-height: 100vh;
     margin: auto;
     background: black;
     color: white;
-    font-size: 125%;
-    font-family: sans-serif;
+    font-size: 140%;
+    font-family: 'PT Serif', serif;
+    scrollbar-width: thin;
+    scrollbar-color: #004e4e #002020;
+}
+
+header img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin: 5px 0 5px 0;
 }
 
 body {
     padding: 20px;
-}
-
-h1, h2, h3 {
-    text-align: left;
-    margin: 25px 0 5px 0;
-    padding: 10px;
-}
-
-h1 {
-    border-bottom: 2px solid #2c3135;
+    min-height: 95vh;
 }
 
 footer {
@@ -33,29 +31,79 @@ nav {
     overflow-x: scroll;
     scrollbar-width: None;
     padding: 10px 5px 10px 5px;
-    border: 2px solid #2c3135;
+    border: 2px solid #003434;
     border-radius: 10px;
+}
+
+h1, h2, h3 {
+    text-align: left;
+    margin: 25px 0 10px 0;
+    padding-top: 10px;
+}
+
+h1 {
+    border-bottom: 2px solid #003434;
+}
+
+p {
+    padding: 7px;
+}
+
+div {
+    overflow: auto;
+    margin: auto;
+}
+
+div p {
+    text-align: center;
 }
 
 button {
     margin: 0 5px 0 5px;
     border: 0;
-    background-color: #2c3135;
+    background-color: #003434;
     border-radius: 7px;
     padding: 15px;
     font-size: 20px;
     color: white;
 }
 
-div {
-    display: flex;
-    overflow: auto;
-    align-items: center;
-    scrollbar-width: None;
+button:hover {
+    background-color: #004e4e;
 }
 
-div p {
-    margin-left: 20px;
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid #004e4e;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+div.gallery div {
+    display: inline;
+    max-width: 49%;
+    margin: 3px;
+}
+
+div.gallery p {
+    max-width: 90%;
+}
+
+div.linking p {
+    text-align: left;
+    margin-left: 10px;
+}
+
+div.linking a {
+    margin-left: 10px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 a {
@@ -66,19 +114,20 @@ a:visited {
     color: #0000EE;
 }
 
-header img {
-    max-width: 100%;
-    border-radius: 15px;
-    margin: 5px 0 5px 0;
-}
-
-@media (max-width: 768px) and (pointer: coarse) {
+@media (orientation: portrait) and (pointer: coarse), (orientation: portrait) and (hover: none), (max-width: 768px) {
     html {
         font-size: 150%;
     }
     nav button {
         margin: 0 5px 0 5px;
         font-size: 30px;
+    }
+    div.gallery div {
+        max-width: 99%;
+    }
+    div.gallery p {
+        margin-top: 0;
+        margin-bottom: 30px;
     }
     footer {
         font-size: medium;
