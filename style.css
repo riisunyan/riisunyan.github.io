@@ -16,8 +16,7 @@ header img {
 }
 
 body {
-    padding: 20px;
-    min-height: 95vh;
+    padding: 0;
 }
 
 footer {
@@ -95,6 +94,10 @@ div.gallery p {
     margin-bottom: 10px;
 }
 
+div.gallery div:last-child p {
+    margin-bottom: 0;
+}
+
 div.linking p {
     text-align: left;
     margin-left: 10px;
@@ -127,6 +130,9 @@ a:visited {
     }
     div.gallery p {
         margin-bottom: 10px;
+    }
+    div.gallery div:last-child p {
+        margin-bottom: 0;
     }
     footer {
         font-size: medium;
