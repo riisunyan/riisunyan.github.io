@@ -91,6 +91,8 @@ div.gallery div {
 
 div.gallery p {
     max-width: 90%;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 div.linking p {
@@ -115,24 +117,18 @@ a:visited {
     color: #0000EE;
 }
 
-/*
+
 @media (orientation: portrait) and (pointer: coarse), (orientation: portrait) and (hover: none), (max-width: 768px) {
     html {
-        font-size: 150%;
-    }
-    nav button {
-        margin: 0 5px 0 5px;
-        font-size: 30px;
+        font-size: 70%;
     }
     div.gallery div {
         max-width: 99%;
     }
     div.gallery p {
-        margin-top: 0;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
     footer {
         font-size: medium;
     }
 }
-*/
