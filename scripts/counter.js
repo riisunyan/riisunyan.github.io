@@ -17,7 +17,7 @@ button.addEventListener("click", () => {
         value /= 2
     }
     else if (value % 2 === 1) {
-        value = value * 3 + 1
+        value = value * 5 + 1
     }
     button.textContent = value
 })

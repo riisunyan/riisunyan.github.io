@@ -2,6 +2,7 @@ const nav = document.createElement("nav");
 nav.innerHTML = `
 <button onclick="window.location.href='/'">Home</button>
 <button onclick="window.location.href='/figurines'">Figurines</button>
+<button onclick="window.location.href='/physics'">Physics</button>
 <button onclick="window.location.href='/coding/python'">Python</button>
 <button onclick="window.location.href='/coding/rust'">Rust</button>
 `;
