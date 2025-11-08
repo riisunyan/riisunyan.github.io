@@ -6,7 +6,7 @@ html {
     font-size: 140%;
     font-family: 'PT Serif', serif;
     scrollbar-width: thin;
-    scrollbar-color: #004e4e #002020;
+    scrollbar-color: #008080 #001010;
 }
 
 header img {
@@ -76,9 +76,7 @@ div.gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /*border: 1px solid #004e4e;*/
-    border-radius: 10px;
-    padding: 3px;
+    align-items: center;
 }
 
 div.gallery div {
@@ -87,9 +85,17 @@ div.gallery div {
     margin: 3px;
 }
 
+div.gallery div div {
+    margin-left: 0;
+}
+
+div.gallery div div p:first-child {
+    padding: 0 0 40px 0;
+}
+
 div.gallery p {
     max-width: 95%;
-    margin: 0 auto 10px;
+    margin: 5px auto auto;
 }
 
 div.gallery div:last-child p {
