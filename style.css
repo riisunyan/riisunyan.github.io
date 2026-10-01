@@ -1,0 +1,135 @@
+html {
+    max-width: 1050px;
+    margin: auto;
+    background: black;
+    color: white;
+    font-size: 140%;
+    font-family: serif;
+    scrollbar-width: thin;
+    scrollbar-color: #008080 #001010;
+}
+
+header img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin: 5px 0 5px 0;
+}
+
+body {
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+    padding-top: 20px;
+}
+
+nav {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: None;
+    padding: 5px 3px 5px 3px;
+    border: 2px solid #003434;
+    border-radius: 10px;
+    gap: 1px;
+}
+
+button {
+    margin: 0 3px 0 3px;
+    border: 0;
+    background-color: #003434;
+    border-radius: 7px;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+button:hover {
+    background-color: #004e4e;
+}
+
+h1, h2, h3 {
+    text-align: left;
+    margin: 25px 0 10px 0;
+    padding-top: 10px;
+}
+
+h1 {
+    border-bottom: 2px solid #003434;
+}
+
+p {
+    padding: 7px;
+}
+
+div {
+    overflow: auto;
+    margin: auto;
+}
+
+div p {
+    text-align: center;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.gallery div {
+    display: inline;
+    max-width: 49%;
+    margin: 3px;
+}
+
+div.gallery div div {
+    margin-left: 0;
+}
+
+div.gallery div div p:first-child {
+    padding: 0 0 40px 0;
+}
+
+div.gallery p {
+    max-width: 95%;
+    margin: 5px auto auto;
+}
+
+div.gallery div:last-child p {
+    margin-bottom: 0;
+}
+
+div.linking p {
+    text-align: left;
+    margin-left: 10px;
+}
+
+div.linking a {
+    margin-left: 10px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+a {
+    color: #0000EE;
+}
+
+a:visited {
+    color: #0000EE;
+}
+
+
+@media (orientation: portrait) and (pointer: coarse), (orientation: portrait) and (hover: none), (max-width: 768px) {
+    html {
+        font-size: 85%;
+    }
+    div.gallery div {
+        max-width: 99%;
+    }
+}
