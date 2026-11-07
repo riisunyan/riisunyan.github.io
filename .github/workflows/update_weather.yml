@@ -22,6 +22,9 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install dependencies
+        run: pip install requests python-dotenv
+
       - name: Generate JSON
         env:
           API_KEY: ${{ secrets.API_KEY }}
