@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ichika.ie - Home</title>
+    <link href="/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<header>
+    <h1>Physics: Beat Frequency</h1>
+</header>
+
+<button id="counterButton">Timer: 0.000 seconds</button>
+
+<label style="display: flow; margin: 10px">Frequency One: <input id="frequencyOne"></label>
+<label style="display: flow; margin: 10px">Frequency Two: <input id="frequencyTwo"></label>
+
+<div>
+    <button id="soundButton" style="margin: 10px">Start sound</button>
+    <button id="stopButton" style="margin: 10px; display: None">Stop sound</button>
+    (Restart for new frequencies)
+</div>
+
+<h2>Example graph for frequencies of 200Hz and 220Hz.</h2>
+<img src="/contents/images/BeatFrequency200-220Hz.jpg" style="border: 1px solid #003434; border-radius: 10px" alt="Graph of interference of frequencies of 200Hz and 220Hz"
+onclick="window.location.href='/contents/images/BeatFrequency200-220Hz.jpg';">
+<p>Take the x-axis as time, and the y-axis as amplitude. Modelled from addition of two sine waves.</p>
+<p><em>Envelope time period</em> found as 0.05 seconds, <em>beat time period</em> found as double at 0.1 seconds. Frequency = 1/T:
+<strong>envelope frequency therefore 20Hz; beat frequency 10Hz.</strong></p>
+<p>Graphed using Qalculate.</p>
+
+
+</body>
+<script src="/scripts/sound.js"></script>
+<script src="/index.js"></script>
+</html>
