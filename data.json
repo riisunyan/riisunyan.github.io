@@ -8,90 +8,33 @@
         "icon": "fog",
         "icon_num": 9,
         "summary": "Fog",
-        "temperature": 7.0,
+        "temperature": 6.0,
         "wind": {
-            "speed": 2.3,
-            "angle": 270,
-            "dir": "W"
+            "speed": 2.5,
+            "angle": 296,
+            "dir": "WNW"
         },
         "precipitation": {
             "total": 0.0,
             "type": "none"
         },
-        "cloud_cover": 78
+        "cloud_cover": 61
     },
     "hourly": {
         "data": [
-            {
-                "date": "2026-11-07T22:00:00",
-                "weather": "fog",
-                "icon": 9,
-                "summary": "Fog",
-                "temperature": 7.0,
-                "wind": {
-                    "speed": 2.3,
-                    "dir": "W",
-                    "angle": 270
-                },
-                "cloud_cover": {
-                    "total": 78
-                },
-                "precipitation": {
-                    "total": 0.0,
-                    "type": "none"
-                }
-            },
-            {
-                "date": "2026-11-07T23:00:00",
-                "weather": "fog",
-                "icon": 9,
-                "summary": "Fog",
-                "temperature": 6.8,
-                "wind": {
-                    "speed": 2.4,
-                    "dir": "W",
-                    "angle": 278
-                },
-                "cloud_cover": {
-                    "total": 80
-                },
-                "precipitation": {
-                    "total": 0.0,
-                    "type": "none"
-                }
-            },
-            {
-                "date": "2026-11-08T00:00:00",
-                "weather": "fog",
-                "icon": 9,
-                "summary": "Fog",
-                "temperature": 6.5,
-                "wind": {
-                    "speed": 2.0,
-                    "dir": "WNW",
-                    "angle": 293
-                },
-                "cloud_cover": {
-                    "total": 82
-                },
-                "precipitation": {
-                    "total": 0.0,
-                    "type": "none"
-                }
-            },
             {
                 "date": "2026-11-08T01:00:00",
                 "weather": "fog",
                 "icon": 9,
                 "summary": "Fog",
-                "temperature": 6.2,
+                "temperature": 6.0,
                 "wind": {
-                    "speed": 2.4,
+                    "speed": 2.5,
                     "dir": "WNW",
                     "angle": 296
                 },
                 "cloud_cover": {
-                    "total": 93
+                    "total": 61
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -103,14 +46,14 @@
                 "weather": "fog",
                 "icon": 9,
                 "summary": "Fog",
-                "temperature": 6.0,
+                "temperature": 5.8,
                 "wind": {
                     "speed": 2.3,
                     "dir": "WNW",
                     "angle": 287
                 },
                 "cloud_cover": {
-                    "total": 95
+                    "total": 68
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -129,7 +72,7 @@
                     "angle": 287
                 },
                 "cloud_cover": {
-                    "total": 96
+                    "total": 75
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -472,6 +415,63 @@
                 },
                 "cloud_cover": {
                     "total": 51
+                },
+                "precipitation": {
+                    "total": 0.0,
+                    "type": "none"
+                }
+            },
+            {
+                "date": "2026-11-08T22:00:00",
+                "weather": "fog",
+                "icon": 9,
+                "summary": "Fog",
+                "temperature": 6.2,
+                "wind": {
+                    "speed": 2.1,
+                    "dir": "SE",
+                    "angle": 130
+                },
+                "cloud_cover": {
+                    "total": 58
+                },
+                "precipitation": {
+                    "total": 0.0,
+                    "type": "none"
+                }
+            },
+            {
+                "date": "2026-11-08T23:00:00",
+                "weather": "fog",
+                "icon": 9,
+                "summary": "Fog",
+                "temperature": 6.2,
+                "wind": {
+                    "speed": 2.0,
+                    "dir": "ESE",
+                    "angle": 117
+                },
+                "cloud_cover": {
+                    "total": 82
+                },
+                "precipitation": {
+                    "total": 0.0,
+                    "type": "none"
+                }
+            },
+            {
+                "date": "2026-11-09T00:00:00",
+                "weather": "fog",
+                "icon": 9,
+                "summary": "Fog",
+                "temperature": 5.5,
+                "wind": {
+                    "speed": 2.3,
+                    "dir": "ESE",
+                    "angle": 111
+                },
+                "cloud_cover": {
+                    "total": 86
                 },
                 "precipitation": {
                     "total": 0.0,
