@@ -5,131 +5,36 @@
     "timezone": "Europe/London",
     "units": "uk",
     "current": {
-        "icon": "partly_sunny",
-        "icon_num": 4,
-        "summary": "Partly sunny",
-        "temperature": 8.5,
+        "icon": "partly_clear",
+        "icon_num": 28,
+        "summary": "Partly clear",
+        "temperature": 7.0,
         "wind": {
-            "speed": 2.2,
-            "angle": 203,
-            "dir": "SSW"
+            "speed": 2.1,
+            "angle": 86,
+            "dir": "E"
         },
         "precipitation": {
             "total": 0.0,
             "type": "none"
         },
-        "cloud_cover": 49
+        "cloud_cover": 45
     },
     "hourly": {
         "data": [
-            {
-                "date": "2026-11-08T16:00:00",
-                "weather": "partly_sunny",
-                "icon": 4,
-                "summary": "Partly sunny",
-                "temperature": 8.5,
-                "wind": {
-                    "speed": 2.2,
-                    "dir": "SSW",
-                    "angle": 203
-                },
-                "cloud_cover": {
-                    "total": 49
-                },
-                "precipitation": {
-                    "total": 0.0,
-                    "type": "none"
-                }
-            },
-            {
-                "date": "2026-11-08T17:00:00",
-                "weather": "fog",
-                "icon": 9,
-                "summary": "Fog",
-                "temperature": 7.0,
-                "wind": {
-                    "speed": 2.0,
-                    "dir": "S",
-                    "angle": 187
-                },
-                "cloud_cover": {
-                    "total": 53
-                },
-                "precipitation": {
-                    "total": 0.0,
-                    "type": "none"
-                }
-            },
-            {
-                "date": "2026-11-08T18:00:00",
-                "weather": "fog",
-                "icon": 9,
-                "summary": "Fog",
-                "temperature": 6.0,
-                "wind": {
-                    "speed": 2.1,
-                    "dir": "SSE",
-                    "angle": 164
-                },
-                "cloud_cover": {
-                    "total": 53
-                },
-                "precipitation": {
-                    "total": 0.0,
-                    "type": "none"
-                }
-            },
-            {
-                "date": "2026-11-08T19:00:00",
-                "weather": "fog",
-                "icon": 9,
-                "summary": "Fog",
-                "temperature": 5.8,
-                "wind": {
-                    "speed": 1.9,
-                    "dir": "SSE",
-                    "angle": 151
-                },
-                "cloud_cover": {
-                    "total": 60
-                },
-                "precipitation": {
-                    "total": 0.0,
-                    "type": "none"
-                }
-            },
-            {
-                "date": "2026-11-08T20:00:00",
-                "weather": "fog",
-                "icon": 9,
-                "summary": "Fog",
-                "temperature": 5.8,
-                "wind": {
-                    "speed": 1.8,
-                    "dir": "ESE",
-                    "angle": 101
-                },
-                "cloud_cover": {
-                    "total": 60
-                },
-                "precipitation": {
-                    "total": 0.0,
-                    "type": "none"
-                }
-            },
             {
                 "date": "2026-11-08T21:00:00",
                 "weather": "fog",
                 "icon": 9,
                 "summary": "Fog",
-                "temperature": 5.8,
+                "temperature": 7.0,
                 "wind": {
-                    "speed": 2.0,
+                    "speed": 2.1,
                     "dir": "E",
-                    "angle": 99
+                    "angle": 86
                 },
                 "cloud_cover": {
-                    "total": 55
+                    "total": 45
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -141,14 +46,14 @@
                 "weather": "fog",
                 "icon": 9,
                 "summary": "Fog",
-                "temperature": 5.5,
+                "temperature": 6.8,
                 "wind": {
-                    "speed": 1.9,
+                    "speed": 2.1,
                     "dir": "ESE",
-                    "angle": 119
+                    "angle": 103
                 },
                 "cloud_cover": {
-                    "total": 68
+                    "total": 49
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -160,14 +65,14 @@
                 "weather": "fog",
                 "icon": 9,
                 "summary": "Fog",
-                "temperature": 5.5,
+                "temperature": 6.5,
                 "wind": {
                     "speed": 1.9,
                     "dir": "E",
-                    "angle": 96
+                    "angle": 86
                 },
                 "cloud_cover": {
-                    "total": 61
+                    "total": 59
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -179,14 +84,14 @@
                 "weather": "fog",
                 "icon": 9,
                 "summary": "Fog",
-                "temperature": 5.5,
+                "temperature": 6.2,
                 "wind": {
                     "speed": 1.9,
-                    "dir": "E",
-                    "angle": 92
+                    "dir": "ENE",
+                    "angle": 76
                 },
                 "cloud_cover": {
-                    "total": 67
+                    "total": 68
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -198,14 +103,14 @@
                 "weather": "fog",
                 "icon": 9,
                 "summary": "Fog",
-                "temperature": 5.2,
+                "temperature": 6.0,
                 "wind": {
-                    "speed": 1.6,
-                    "dir": "E",
-                    "angle": 83
+                    "speed": 2.1,
+                    "dir": "ENE",
+                    "angle": 71
                 },
                 "cloud_cover": {
-                    "total": 69
+                    "total": 57
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -217,14 +122,14 @@
                 "weather": "fog",
                 "icon": 9,
                 "summary": "Fog",
-                "temperature": 5.0,
+                "temperature": 6.0,
                 "wind": {
-                    "speed": 2.2,
+                    "speed": 2.3,
                     "dir": "ENE",
-                    "angle": 75
+                    "angle": 66
                 },
                 "cloud_cover": {
-                    "total": 67
+                    "total": 50
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -236,14 +141,14 @@
                 "weather": "fog",
                 "icon": 9,
                 "summary": "Fog",
-                "temperature": 5.2,
+                "temperature": 6.0,
                 "wind": {
-                    "speed": 2.4,
+                    "speed": 2.5,
                     "dir": "ENE",
-                    "angle": 70
+                    "angle": 69
                 },
                 "cloud_cover": {
-                    "total": 64
+                    "total": 56
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -255,14 +160,14 @@
                 "weather": "fog",
                 "icon": 9,
                 "summary": "Fog",
-                "temperature": 5.2,
+                "temperature": 5.8,
                 "wind": {
-                    "speed": 2.5,
-                    "dir": "ENE",
-                    "angle": 75
+                    "speed": 2.8,
+                    "dir": "E",
+                    "angle": 82
                 },
                 "cloud_cover": {
-                    "total": 58
+                    "total": 50
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -274,14 +179,14 @@
                 "weather": "fog",
                 "icon": 9,
                 "summary": "Fog",
-                "temperature": 5.5,
+                "temperature": 6.0,
                 "wind": {
-                    "speed": 2.7,
-                    "dir": "ENE",
-                    "angle": 75
+                    "speed": 2.9,
+                    "dir": "E",
+                    "angle": 85
                 },
                 "cloud_cover": {
-                    "total": 60
+                    "total": 42
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -293,11 +198,11 @@
                 "weather": "fog",
                 "icon": 9,
                 "summary": "Fog",
-                "temperature": 5.5,
+                "temperature": 6.2,
                 "wind": {
-                    "speed": 2.6,
-                    "dir": "E",
-                    "angle": 80
+                    "speed": 3.3,
+                    "dir": "ENE",
+                    "angle": 68
                 },
                 "cloud_cover": {
                     "total": 47
@@ -309,17 +214,17 @@
             },
             {
                 "date": "2026-11-09T07:00:00",
-                "weather": "fog",
-                "icon": 9,
-                "summary": "Fog",
-                "temperature": 6.2,
+                "weather": "partly_sunny",
+                "icon": 4,
+                "summary": "Partly sunny",
+                "temperature": 6.0,
                 "wind": {
-                    "speed": 2.8,
-                    "dir": "E",
-                    "angle": 90
+                    "speed": 3.5,
+                    "dir": "ENE",
+                    "angle": 59
                 },
                 "cloud_cover": {
-                    "total": 40
+                    "total": 55
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -331,14 +236,14 @@
                 "weather": "partly_sunny",
                 "icon": 4,
                 "summary": "Partly sunny",
-                "temperature": 6.0,
+                "temperature": 5.8,
                 "wind": {
                     "speed": 3.0,
-                    "dir": "E",
-                    "angle": 94
+                    "dir": "ENE",
+                    "angle": 68
                 },
                 "cloud_cover": {
-                    "total": 53
+                    "total": 52
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -350,14 +255,14 @@
                 "weather": "partly_sunny",
                 "icon": 4,
                 "summary": "Partly sunny",
-                "temperature": 6.5,
+                "temperature": 6.2,
                 "wind": {
-                    "speed": 3.4,
-                    "dir": "E",
-                    "angle": 94
+                    "speed": 3.0,
+                    "dir": "ESE",
+                    "angle": 117
                 },
                 "cloud_cover": {
-                    "total": 62
+                    "total": 47
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -366,17 +271,17 @@
             },
             {
                 "date": "2026-11-09T10:00:00",
-                "weather": "partly_sunny",
-                "icon": 4,
-                "summary": "Partly sunny",
+                "weather": "mostly_cloudy",
+                "icon": 5,
+                "summary": "Mostly cloudy",
                 "temperature": 8.0,
                 "wind": {
-                    "speed": 4.2,
-                    "dir": "E",
-                    "angle": 99
+                    "speed": 3.9,
+                    "dir": "ESE",
+                    "angle": 112
                 },
                 "cloud_cover": {
-                    "total": 57
+                    "total": 69
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -388,14 +293,14 @@
                 "weather": "partly_sunny",
                 "icon": 4,
                 "summary": "Partly sunny",
-                "temperature": 9.5,
+                "temperature": 9.2,
                 "wind": {
-                    "speed": 7.1,
+                    "speed": 7.4,
                     "dir": "ESE",
                     "angle": 111
                 },
                 "cloud_cover": {
-                    "total": 41
+                    "total": 48
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -407,14 +312,14 @@
                 "weather": "partly_sunny",
                 "icon": 4,
                 "summary": "Partly sunny",
-                "temperature": 10.0,
+                "temperature": 9.8,
                 "wind": {
-                    "speed": 9.1,
+                    "speed": 9.6,
                     "dir": "ESE",
-                    "angle": 115
+                    "angle": 113
                 },
                 "cloud_cover": {
-                    "total": 52
+                    "total": 40
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -426,14 +331,14 @@
                 "weather": "partly_sunny",
                 "icon": 4,
                 "summary": "Partly sunny",
-                "temperature": 10.2,
+                "temperature": 9.8,
                 "wind": {
-                    "speed": 9.9,
+                    "speed": 10.5,
                     "dir": "ESE",
-                    "angle": 109
+                    "angle": 112
                 },
                 "cloud_cover": {
-                    "total": 57
+                    "total": 41
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -445,14 +350,14 @@
                 "weather": "partly_sunny",
                 "icon": 4,
                 "summary": "Partly sunny",
-                "temperature": 10.0,
+                "temperature": 9.5,
                 "wind": {
-                    "speed": 9.8,
+                    "speed": 10.0,
                     "dir": "ESE",
-                    "angle": 106
+                    "angle": 109
                 },
                 "cloud_cover": {
-                    "total": 52
+                    "total": 42
                 },
                 "precipitation": {
                     "total": 0.0,
@@ -466,12 +371,107 @@
                 "summary": "Partly sunny",
                 "temperature": 9.2,
                 "wind": {
-                    "speed": 9.4,
+                    "speed": 9.8,
                     "dir": "ESE",
-                    "angle": 109
+                    "angle": 102
                 },
                 "cloud_cover": {
-                    "total": 57
+                    "total": 41
+                },
+                "precipitation": {
+                    "total": 0.0,
+                    "type": "none"
+                }
+            },
+            {
+                "date": "2026-11-09T16:00:00",
+                "weather": "mostly_cloudy",
+                "icon": 5,
+                "summary": "Mostly cloudy",
+                "temperature": 8.5,
+                "wind": {
+                    "speed": 8.3,
+                    "dir": "E",
+                    "angle": 100
+                },
+                "cloud_cover": {
+                    "total": 67
+                },
+                "precipitation": {
+                    "total": 0.0,
+                    "type": "none"
+                }
+            },
+            {
+                "date": "2026-11-09T17:00:00",
+                "weather": "mostly_cloudy",
+                "icon": 29,
+                "summary": "Mostly cloudy",
+                "temperature": 7.8,
+                "wind": {
+                    "speed": 8.0,
+                    "dir": "E",
+                    "angle": 92
+                },
+                "cloud_cover": {
+                    "total": 76
+                },
+                "precipitation": {
+                    "total": 0.0,
+                    "type": "none"
+                }
+            },
+            {
+                "date": "2026-11-09T18:00:00",
+                "weather": "mostly_cloudy",
+                "icon": 29,
+                "summary": "Mostly cloudy",
+                "temperature": 7.5,
+                "wind": {
+                    "speed": 7.8,
+                    "dir": "E",
+                    "angle": 91
+                },
+                "cloud_cover": {
+                    "total": 76
+                },
+                "precipitation": {
+                    "total": 0.0,
+                    "type": "none"
+                }
+            },
+            {
+                "date": "2026-11-09T19:00:00",
+                "weather": "mostly_cloudy",
+                "icon": 29,
+                "summary": "Mostly cloudy",
+                "temperature": 7.5,
+                "wind": {
+                    "speed": 7.8,
+                    "dir": "E",
+                    "angle": 92
+                },
+                "cloud_cover": {
+                    "total": 75
+                },
+                "precipitation": {
+                    "total": 0.0,
+                    "type": "none"
+                }
+            },
+            {
+                "date": "2026-11-09T20:00:00",
+                "weather": "mostly_cloudy",
+                "icon": 29,
+                "summary": "Mostly cloudy",
+                "temperature": 7.2,
+                "wind": {
+                    "speed": 7.9,
+                    "dir": "E",
+                    "angle": 92
+                },
+                "cloud_cover": {
+                    "total": 77
                 },
                 "precipitation": {
                     "total": 0.0,
