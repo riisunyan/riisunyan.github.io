@@ -9,6 +9,13 @@ html {
     scrollbar-color: #008080 #001010;
 }
 
+header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
 header img {
     max-width: 100%;
     border-radius: 15px;
@@ -83,6 +90,7 @@ div.gallery div {
     display: inline;
     max-width: 49%;
     margin: 3px;
+    margin-bottom: 25px;
 }
 
 div.gallery div div {
